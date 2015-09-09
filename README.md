@@ -11,7 +11,29 @@ Based on PHP Client : https://github.com/Yousign/yousign-api-client-php
 Installation
 ------------
 
-Install using composer:
+Install using composer
+First update your composer.json
+```bash
+{
+    "repositories":  [
+        {
+            "type": "package",
+            "package": {
+                "name": "nusphere/nusoap",
+                "version": "0.9.5",
+                "dist": {
+                    "url": "http://downloads.sourceforge.net/project/nusoap/nusoap/0.9.5/nusoap-0.9.5.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "classmap": ["lib/"]
+                }
+            }
+        }
+    ],
+}
+```
+Now require the lib
 ```bash
 composer require wooxo/yousign-api-client-php "~0.1"
 ```
