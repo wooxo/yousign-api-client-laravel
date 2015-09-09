@@ -1,0 +1,41 @@
+{
+    "name": "wooxo/yousign-api-client-laravel",
+    "type": "library",
+    "description": "Laravel 4.X client for the Yousign API",
+    "authors": [
+        {
+            "name": "Wooxo SA",
+            "email": "dev@wooxo.fr"
+        }
+    ],
+    "license": "MIT",
+    "keywords": ["yousign", "laravel"],
+    "homepage": "https://github.com/wooxo/yousign-api-client-laravel",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "nusphere/nusoap",
+                "version": "0.9.5",
+                "dist": {
+                    "url": "http://downloads.sourceforge.net/project/nusoap/nusoap/0.9.5/nusoap-0.9.5.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "classmap": [
+                        "lib/"
+                    ]
+                }
+            }
+        }
+    ],
+    "require": {
+        "yousign/yousign-api-client": "~1.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "Wooxo\\YouSignApiClientLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
