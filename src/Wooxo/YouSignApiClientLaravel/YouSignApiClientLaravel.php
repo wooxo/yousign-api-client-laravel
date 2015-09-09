@@ -1,6 +1,6 @@
 <?php
 namespace Wooxo\YouSignApiClientLaravel;
-
+use YousignAPI\YsApi;
 use Illuminate\Support\Facades\Config;
 
 /**
