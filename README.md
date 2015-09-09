@@ -35,12 +35,12 @@ First update your composer.json
 ```
 Now require the lib
 ```bash
-composer require wooxo/yousign-api-client-php "~0.1"
+composer require wooxo/yousign-api-client-laravel "~0.1"
 ```
 
 Publish config and complete informations (contact YouSign to get Credentials)
 ```bash
-php artisan config:publish wooxo/yousign-api-client-php
+php artisan config:publish wooxo/yousign-api-client-laravel
 ```
 
 Add provider in config.app
