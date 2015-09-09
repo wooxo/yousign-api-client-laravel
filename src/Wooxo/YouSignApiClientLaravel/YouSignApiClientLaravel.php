@@ -14,16 +14,16 @@ class YouSignApiClientLaravel extends YsApi {
      * Constructor
      */
     public function __construct(){
-        $yousign = parent::__construct(null);
-        $yousign->setLogin(Config::get('yousign-api-client-laravel::config.login'));
+        parent::__construct(null);
+        $this->setLogin(Config::get('yousign-api-client-laravel::config.login'));
         if(!Config::get('yousign-api-client-laravel::config.isEncryptedPassword')) {
-            $yousign->setPassword($yousign->encryptPassword(Config::get('yousign-api-client-laravel::config.password')));
+            $this->setPassword($this->encryptPassword(Config::get('yousign-api-client-laravel::config.password')));
         } else {
-            $yousign->setPassword(Config::get('yousign-api-client-laravel::config.username'));
+            $this->setPassword(Config::get('yousign-api-client-laravel::config.username'));
         }
 
-        $yousign->setApiKey(Config::get('yousign-api-client-laravel::config.api_key'));
-        $yousign->setEnvironment(Config::get('yousign-api-client-laravel::config.environment'));
+        $this->setApiKey(Config::get('yousign-api-client-laravel::config.api_key'));
+        $this->setEnvironment(Config::get('yousign-api-client-laravel::config.environment'));
     }
 
 }
