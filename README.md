@@ -1,6 +1,6 @@
 # YouSignApiClientLaravel
 
-[![Build Status](https://travis-ci.org/wooxo/YouSignApiClientLaravel.svg?branch=master)](https://travis-ci.org/wooxo/YouSignApiClientLaravel)
+[![Build Status](https://travis-ci.org/wooxo/yousign-api-client-laravel.svg?branch=master)](https://travis-ci.org/wooxo/yousign-api-client-laravel)
 [![Latest Stable Version](https://poser.pugx.org/wooxo/yousign-api-client-laravel/v/stable.png)](https://packagist.org/packages/wooxo/yousign-api-client-laravel) [![Total Downloads](https://poser.pugx.org/wooxo/yousign-api-client-laravel/downloads.png)](https://packagist.org/packages/wooxo/ovh-swift-laravel)
 
 It's a library for Laravel 4.2.
@@ -12,27 +12,7 @@ Installation
 ------------
 
 Install using composer
-First update your composer.json
-```bash
-{
-    "repositories":  [
-        {
-            "type": "package",
-            "package": {
-                "name": "nusphere/nusoap",
-                "version": "0.9.5",
-                "dist": {
-                    "url": "http://downloads.sourceforge.net/project/nusoap/nusoap/0.9.5/nusoap-0.9.5.zip",
-                    "type": "zip"
-                },
-                "autoload": {
-                    "classmap": ["lib/"]
-                }
-            }
-        }
-    ],
-}
-```
+
 Now require the lib
 ```bash
 composer require wooxo/yousign-api-client-laravel "~0.1"
